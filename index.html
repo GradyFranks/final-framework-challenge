@@ -13,7 +13,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #041E42; 
+            background-color: #041E42; /* Dark blue background */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,8 +21,10 @@
             color: #333;
             text-align: center;
             flex-direction: column;
+            overflow: hidden; /* Prevents scrolling if the content fits */
         }
 
+        /* Black header with 3 links */
         .header {
             background-color: #000000;
             color: white;
@@ -46,14 +48,20 @@
             text-decoration: underline;
         }
 
+        /* Container for the content */
         .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             max-width: 600px;
+            width: 100%;
             padding: 20px;
             background-color: #ffffff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             text-align: center;
-            margin-top: 80px; 
+            margin-top: 80px; /* To ensure the content is below the header */
         }
 
         .header {
@@ -63,13 +71,21 @@
             margin-bottom: 20px;
         }
 
+        /* Image placeholder */
         .image-placeholder {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 20px;
         }
 
         .image-placeholder img {
             max-width: 100%;
             height: auto;
+            width: 100%;
+            object-fit: cover; /* Ensures the image covers the container without distorting */
         }
 
         .message {
@@ -88,6 +104,7 @@
             text-decoration: underline;
         }
 
+        /* Photo section */
         .photo-section {
             margin-top: 20px;
             margin-bottom: 20px;
@@ -100,18 +117,21 @@
     </style>
 </head>
 <body>
+    <!-- Black header with 3 links -->
     <div class="header">
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">News</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
     </div>
 
+    <!-- Photo section -->
     <div class="photo-section">
         <p>INSERT BBYGIRLHERE</p>
-        <img src="pics/Major_League_Baseball_logo.svg.png"
- 
+        <!-- Place your photo code here -->
+        <!-- Example: <img src="your-photo.jpg" alt="Photo"> -->
     </div>
 
+    <!-- Main content for the 404 page -->
     <div class="container">
         <div class="header">404 - Page Not Found</div>
 
