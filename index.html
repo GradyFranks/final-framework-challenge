@@ -13,13 +13,37 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #041E42; /* Dark blue background */
+            background-color: #041E42; 
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             color: #333;
             text-align: center;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #000000;
+            color: white;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
         }
 
         .container {
@@ -29,6 +53,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             text-align: center;
+            margin-top: 80px; 
         }
 
         .header {
@@ -38,7 +63,6 @@
             margin-bottom: 20px;
         }
 
-        /* Image placeholder */
         .image-placeholder {
             margin-bottom: 20px;
         }
@@ -63,19 +87,40 @@
         .back-link:hover {
             text-decoration: underline;
         }
+
+        .photo-section {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .photo-section img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">News</a>
+    </div>
+
+    <div class="photo-section">
+        <p>INSERT BBYGIRLHERE</p>
+        <img src="pics/Major_League_Baseball_logo.svg.png"
+ 
+    </div>
+
     <div class="container">
         <div class="header">404 - Page Not Found</div>
-        
-     
+
         <div class="image-placeholder">
-            <img src="photos/Screen%20Shot%202024-11-07%20at%208.20.23%20PM.png" alt="Sad Face">
+            <img src="pics/461606-200.png" alt="Sad Face">
         </div>
 
-        <div class="message">Oops! The page you are looking for does not exist.</div>
-        <a href="/" class="back-link">Go back to the homepage</a>
+        <div class="message">Oops! Looks like our page struck out!</div>
+        <a href="/" class="back-link">Go back to home base!</a>
     </div>
 </body>
 </html>
